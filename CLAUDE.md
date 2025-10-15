@@ -4,7 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Chrome extension (Manifest V3) that allows users to run custom JavaScript scripts on websites. It includes an AI-powered script generator using Google Gemini API.
+**WebscriptAI** - A Chrome extension (Manifest V3) that allows users to run custom JavaScript scripts on websites. It includes an AI-powered script generator using Google Gemini API.
+
+**GitHub Repository**: https://github.com/tomeraf/WebscriptAI
+**Live Demo**: https://extension-kfh3wd12s-tomerbigcohen-4405s-projects.vercel.app
 
 ## Development Workflow
 

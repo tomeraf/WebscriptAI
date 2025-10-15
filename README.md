@@ -23,7 +23,7 @@ Since this extension is not published on the Chrome Web Store, you'll need to in
 
 **Option A: Clone with Git**
 ```bash
-git clone https://github.com/YOUR_USERNAME/script-runner-extension.git
+git clone https://github.com/tomeraf/WebscriptAI.git
 ```
 
 **Option B: Download ZIP**
@@ -225,8 +225,8 @@ MIT License - feel free to use, modify, and distribute.
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/script-runner-extension/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/script-runner-extension/discussions)
+- **Issues**: [GitHub Issues](https://github.com/tomeraf/WebscriptAI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/tomeraf/WebscriptAI/discussions)
 
 ---
 
