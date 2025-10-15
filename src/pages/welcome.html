@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Script Runner with AI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .welcome-container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    .step {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: #667eea;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .step-content h3 {
+      color: #667eea;
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+    }
+
+    .step-content p {
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    .features {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .features h3 {
+      color: #1e293b;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #475569;
+    }
+
+    .feature-icon {
+      font-size: 1.5rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+
+    .btn-secondary:hover {
+      background: #667eea;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .tip {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .tip strong {
+      color: #92400e;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .tip p {
+      color: #78350f;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .content {
+        padding: 25px;
+      }
+
+      .step {
+        flex-direction: column;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <div class="header">
+      <h1>🚀 Welcome to Script Runner with AI!</h1>
+      <p>Automate any website with JavaScript + AI-powered code generation</p>
+    </div>
+
+    <div class="content">
+      <div class="features">
+        <h3>What You Can Do</h3>
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-icon">🤖</span>
+            <span>AI Script Generator</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🔄</span>
+            <span>Auto-repeat Scripts</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <span>Bypass CSP</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🎯</span>
+            <span>Site-Specific</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🔒</span>
+            <span>Privacy First</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💬</span>
+            <span>Interactive Chat</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="margin-bottom: 20px; color: #1e293b;">Quick Start Guide</h2>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Get Your Free API Key</h3>
+          <p>Visit Google AI Studio to get your free Gemini API key. This enables the AI script generation feature.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Open the Extension</h3>
+          <p>Click the extension icon in your browser toolbar to open the popup and configure your scripts.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Enable Script Runner</h3>
+          <p>Toggle the "Enable Script" switch, write your JavaScript code, or use the AI assistant to generate it for you.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Start Automating!</h3>
+          <p>Reload the page to run your scripts. Use repeating scripts for continuous automation.</p>
+        </div>
+      </div>
+
+      <div class="tip">
+        <strong>💡 Pro Tip</strong>
+        <p>Use the "Chat with AI Assistant" button to describe what you want in plain English, and let AI generate the JavaScript code for you!</p>
+      </div>
+
+      <div class="cta-buttons">
+        <button class="btn btn-primary" id="getApiKeyBtn">Get Free API Key</button>
+        <button class="btn btn-secondary" id="openExtensionBtn">Open Extension</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/welcome.js"></script>
+</body>
+</html>

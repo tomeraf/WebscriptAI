@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Run custom JavaScript scripts on any website with AI-powered script generation. Automate tasks, modify pages, and enhance your browsing experience.">
+  <title>Script Runner with AI - Chrome Extension</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🚀 Script Runner with AI</h1>
+      <p class="tagline">Automate any website with custom JavaScript + AI-powered script generation</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Run Custom Scripts. Anywhere. Anytime.</h2>
+        <p>A powerful Chrome extension that lets you inject and run JavaScript code on any website. Perfect for automation, testing, web scraping, and customization.</p>
+        <div class="cta-buttons">
+          <a href="#install" class="btn btn-primary">Get Started</a>
+          <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Script Generator</h3>
+          <p>Describe what you want in plain English, and let Google Gemini AI generate the JavaScript code for you.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Repeating Scripts</h3>
+          <p>Run scripts at custom intervals to automate repetitive tasks like form filling, data scraping, or page monitoring.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>CSP Bypass</h3>
+          <p>Advanced injection system that bypasses Content Security Policy restrictions on any website.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Interactive Chat</h3>
+          <p>Chat with AI to refine your scripts, debug issues, or learn JavaScript on the fly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Site-Specific Scripts</h3>
+          <p>Enable/disable scripts per website. Your settings sync across all tabs automatically.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Privacy First</h3>
+          <p>All scripts run locally. Your API keys stay on your device. No data sent to third parties.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="install" class="install">
+      <h2>Installation</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Download the Extension</h3>
+            <p>Clone or download the extension files from the repository.</p>
+            <code>git clone https://github.com/yourusername/script-runner-extension.git</code>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Load in Chrome</h3>
+            <p>Open <code>chrome://extensions/</code>, enable "Developer mode", click "Load unpacked", and select the extension folder.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Get a Free API Key</h3>
+            <p>Get your free Google Gemini API key at <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Start Scripting!</h3>
+            <p>Click the extension icon, enable scripts, and start automating websites or use the AI chat to generate code.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases" class="use-cases">
+      <h2>What Can You Do?</h2>
+      <div class="use-case-list">
+        <div class="use-case">
+          <h3>🎨 Page Customization</h3>
+          <p>Change colors, hide elements, add custom CSS, or modify content on any website.</p>
+        </div>
+        <div class="use-case">
+          <h3>📊 Data Extraction</h3>
+          <p>Scrape data from tables, extract prices, monitor changes, or collect information automatically.</p>
+        </div>
+        <div class="use-case">
+          <h3>🤖 Task Automation</h3>
+          <p>Auto-fill forms, click buttons, navigate pages, or automate repetitive workflows.</p>
+        </div>
+        <div class="use-case">
+          <h3>🧪 Testing & Debugging</h3>
+          <p>Test JavaScript code on live websites, debug issues, or prototype features quickly.</p>
+        </div>
+        <div class="use-case">
+          <h3>📈 Monitoring</h3>
+          <p>Watch for page changes, track prices, get notified when content updates, or log activity.</p>
+        </div>
+        <div class="use-case">
+          <h3>🎓 Learning</h3>
+          <p>Practice JavaScript, experiment with DOM manipulation, or learn by doing with AI assistance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="documentation" class="documentation">
+      <h2>Quick Start Guide</h2>
+
+      <div class="doc-section">
+        <h3>Basic Usage</h3>
+        <ol>
+          <li>Click the extension icon to open the popup</li>
+          <li>Toggle the "Enable Script Runner" switch</li>
+          <li>Write your JavaScript in the "Initial Script" textarea</li>
+          <li>Set a delay (optional) and click away to auto-save</li>
+          <li>Reload the page to run your script</li>
+        </ol>
+      </div>
+
+      <div class="doc-section">
+        <h3>Using the AI Assistant</h3>
+        <ol>
+          <li>Click "Chat with AI Assistant" in the popup</li>
+          <li>Enter your API key when prompted (one-time setup)</li>
+          <li>Describe what you want: "Find all images and make them grayscale"</li>
+          <li>Click "Use as Initial Script" or "Use as Repeat Script"</li>
+          <li>The script is automatically saved to your extension</li>
+        </ol>
+      </div>
+
+      <div class="doc-section">
+        <h3>Repeating Scripts</h3>
+        <p>Use the "Repeat Script" section to run code at regular intervals:</p>
+        <ul>
+          <li>Enter your script in the "Repeat Script" textarea</li>
+          <li>Set the interval (in seconds)</li>
+          <li>Perfect for monitoring, polling, or continuous automation</li>
+        </ul>
+      </div>
+
+      <div class="doc-section">
+        <h3>Example Scripts</h3>
+        <div class="example">
+          <h4>Remove all ads</h4>
+          <pre><code>document.querySelectorAll('[id*="ad"], [class*="ad"]').forEach(el => el.remove());</code></pre>
+        </div>
+        <div class="example">
+          <h4>Auto-scroll to bottom</h4>
+          <pre><code>window.scrollTo(0, document.body.scrollHeight);</code></pre>
+        </div>
+        <div class="example">
+          <h4>Extract all links</h4>
+          <pre><code>Array.from(document.querySelectorAll('a')).map(a => a.href);</code></pre>
+        </div>
+        <div class="example">
+          <h4>Dark mode any website</h4>
+          <pre><code>document.body.style.filter = 'invert(1) hue-rotate(180deg)';</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3>Is this free?</h3>
+        <p>Yes! The extension is free and open source. The Gemini API has a generous free tier.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my data safe?</h3>
+        <p>Absolutely. All scripts run locally in your browser. Your API keys are stored locally. We use Vercel only for error logging (anonymous).</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use this for web scraping?</h3>
+        <p>Yes, but respect website terms of service and rate limits. Use responsibly.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why isn't my script working?</h3>
+        <p>Make sure the extension is enabled, the page is reloaded, and check the browser console for errors.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I contribute?</h3>
+        <p>Yes! This is open source. Submit issues, pull requests, or suggestions on GitHub.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Script Runner with AI. Open Source Project.</p>
+      <p>
+        <a href="https://github.com/yourusername/script-runner-extension" target="_blank">GitHub</a> |
+        <a href="https://vercel.com/tomerbigcohen-4405s-projects/extension" target="_blank">Status</a> |
+        <a href="https://aistudio.google.com/app/apikey" target="_blank">Get API Key</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

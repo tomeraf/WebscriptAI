@@ -1,0 +1,13 @@
+# Ignore extension source files (not needed on Vercel)
+src/
+manifest.json
+
+# Ignore Vercel config directory
+.vercel
+
+# Ignore Claude AI config
+.claude/
+
+# Keep only:
+# - api/ (serverless functions)
+# - public/ (landing page)
